@@ -1,0 +1,21 @@
+{
+  "wvu_nav": {
+    "pages": [
+      {
+        "name": "Page 1",
+        "url": "#",
+        "classes": "first active"
+      },
+      {
+        "name": "Page 2",
+        "url": "#",
+        "classes": ""
+      },
+      {
+        "name": "Page 3",
+        "url": "#",
+        "classes": ""
+      }
+    ]
+  }
+}

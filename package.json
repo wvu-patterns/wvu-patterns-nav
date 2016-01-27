@@ -1,0 +1,51 @@
+{
+  "name": "wvu-patterns-nav",
+  "homepage": "https://github.com/wvu-patterns/wvu-patterns-nav",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wvu-patterns/wvu-patterns-nav.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wvu-patterns/wvu-patterns-nav/issues"
+  },
+  "author": "Steven Spriggs <steven.spriggs@mail.wvu.edu>",
+  "contributors": [
+    {
+      "name": "Adam Glenn",
+      "email": "adam.glenn@mail.wvu.edu"
+    },
+    {
+      "name": "Adam Johnson",
+      "email": "adam.johnson@mail.wvu.edu"
+    },
+    {
+      "name": "Dustin Mazon",
+      "email": "dustin.mazon@mail.wvu.edu"
+    }
+  ],
+  "keywords": [
+    "wvu",
+    "patterns"
+  ],
+  "description": "WVU Pattern Library -- Nav Module",
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp ci"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compile-handlebars": "0.5.0",
+    "gulp-file": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-scss-lint": "^0.3.8",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-todo": "^4.1.0",
+    "gulp-util": "^3.0.7",
+    "merge": "^1.2.0"
+  }
+}

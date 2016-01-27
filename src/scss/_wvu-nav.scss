@@ -1,0 +1,87 @@
+.wvu-nav__container {
+  @include outer-container();
+}
+
+.wvu-nav {
+
+  width: 100%;
+
+  li {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  a {
+    color: $wvu-white;
+    float: left;
+    margin-right: 0;
+    padding: 1em;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+      background: $wvu-gold;
+      color: $wvu-blue;
+    }
+  }
+}
+
+.wvu-nav__items,
+.wvu-nav ul {
+  margin-bottom: 0;
+
+  @include media($wvu-bp-small) {
+    padding: 0 20px;
+  }
+
+  @include media($wvu-bp-xlarge) {
+    padding: 0;
+  }
+
+  @include media($wvu-bp-medium) {
+    margin-left: -1em;
+  }
+
+  > li {
+    border-right: 1px solid $wvu-darker-grey;
+  }
+
+  &.nav-collapse {
+    clear: both;
+    overflow: visible;
+
+    li {
+      @include media($wvu-bp-small) {
+        float: left;
+        width: auto;
+      }
+    }
+  }
+}
+
+// Responsive-nav.com toggle (inside of .nav-department)
+.nav-toggle {
+  color: $wvu-white;
+  float: left;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+
+  @include media($wvu-bp-medium) {
+    margin-left: 10px;
+  }
+
+  &:visited {
+    color: $wvu-white;
+  }
+
+  &:hover {
+    background-color: $wvu-gold;
+    color: $wvu-blue;
+    text-decoration: none;
+  }
+
+
+}
+//.nav-toggle

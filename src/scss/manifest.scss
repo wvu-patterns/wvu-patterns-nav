@@ -1,0 +1,42 @@
+// 3rd Party Dependencies
+// =================================================
+
+// Normalize
+@import './bower_components/normalize.scss/fork-versions/default/normalize';
+
+// Bourbon & Neat
+@import './bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import './bower_components/neat/app/assets/stylesheets/neat';
+
+
+// WVU Dependency Utilities
+// =================================================
+
+// wvu-utilities-variables
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-color';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-base';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-mediaquery';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-images';
+@import './bower_components/wvu-utilities-variables/src/scss/wvu-variables-overrides';
+
+// wvu-utilities-typography
+@import './bower_components/wvu-utilities-typography/src/scss/wvu-typography-variables';
+@import './bower_components/wvu-utilities-typography/src/scss/wvu-typography-overrides';
+@import './bower_components/wvu-utilities-typography/src/scss/wvu-typography-mixins';
+@import './bower_components/wvu-utilities-typography/src/scss/wvu-typography';
+
+// wvu-utilities-colors
+@import './bower_components/wvu-utilities-colors/src/scss/wvu-color-mixins';
+@import './bower_components/wvu-utilities-colors/src/scss/wvu-color-classes';
+
+
+// WVU Dependency Patterns
+// =================================================
+
+
+// WVU Masthead Pattern
+// =================================================
+// TODO: The SCSS should be refactored, allowing configuration of using dropdown code or not as well as fixing depth of nesting.
+//@import './src/scss/wvu-nav';
+@import './src/scss/wvu-nav__dropdowns';
+@import './src/scss/wvu-nav__skip';
