@@ -12,6 +12,7 @@ $ bower install --save wvu-patterns-nav
 
 ```
 "wvu-utilities-variables": "1.0.0",
+"wvu-utilities-colors": "~1.0.0",
 "neat" : "1.7.2"
 ```
 
