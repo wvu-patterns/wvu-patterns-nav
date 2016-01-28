@@ -8,6 +8,11 @@
 
   </head>
   <body>
-    {{> _wvu-nav }}
+    {{#each tests}}
+      <h2>{{name}}</h2>
+      {{#settings}}
+        {{> _wvu-nav}}
+      {{/settings}}
+    {{/each}}
   </body>
 </html>

@@ -1,21 +1,56 @@
 {
-  "wvu_nav": {
-    "pages": [
-      {
-        "name": "Page 1",
-        "url": "#",
-        "classes": "first active"
-      },
-      {
-        "name": "Page 2",
-        "url": "#",
-        "classes": ""
-      },
-      {
-        "name": "Page 3",
-        "url": "#",
-        "classes": ""
+  "tests": [
+    {
+      "name": "wvu-nav",
+      "settings": {
+        "wvu_config": {
+          "wvu_nav": {
+            "classes": "",
+            "dropdowns": false
+          }
+        },
+        "pages": [
+          {
+            "name": "Page 1",
+            "url": "#",
+            "classes": "first active",
+            "subpages": [
+              {
+                "name": "Page 1 a",
+                "url": "#",
+                "classes": ""
+              },
+              {
+                "name": "Page 1 b",
+                "url": "#",
+                "classes": ""
+              }
+            ]
+          },
+          {
+            "name": "Page 2",
+            "url": "#",
+            "classes": ""
+          },
+          {
+            "name": "Page 3",
+            "url": "#",
+            "classes": ""
+          }
+        ]
       }
-    ]
-  }
+    },
+    {
+      "name": "wvu-nav-dropdowns",
+      "settings": {
+        "wvu_config": {
+          "wvu_nav": {
+            "classes": "",
+            "dropdowns": true
+          }
+        },
+        "generated_menu": "<li>\n  <a href=\"#\" class=\"first active\">Page 1</a>\n  <ul>\n    <li><a href=\"#\" class=\"\">Page 1 a</a></li>\n    <li><a href=\"#\" class=\"\">Page 1 a</a></li>\n  </ul>\n</li>\n<li><a href=\"#\" class=\"first active\">Page 2</a></li>\n<li><a href=\"#\" class=\"first active\">Page 3</a></li>"
+      }
+    }
+  ]
 }

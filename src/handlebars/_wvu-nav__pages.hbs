@@ -1,3 +1,7 @@
-{{#wvu_nav.pages}}
-  <li><a href="{{url}}" class="{{classes}}">{{name}}</a></li>
-{{/wvu_nav.pages}}
+{{#unless wvu_config.wvu_nav.dropdowns}}
+  {{#each pages}}
+    <li><a href="{{url}}" class="{{classes}}">{{name}}</a></li>
+  {{/each }}
+{{else}}
+  {{{generated_menu}}}
+{{/unless}}

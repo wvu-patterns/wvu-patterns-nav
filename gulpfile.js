@@ -67,7 +67,12 @@ gulp.task('build',['todo','compile-scss'], function () {
   var options = {
     batch : [
       './src/handlebars'
-    ]
+    ],
+    helpers: {
+      json: function(str) {
+        return JSON.stringify(str);
+      }
+    }
   };
   var test_data = JSON.parse(fs.readFileSync('./test/data/test.json'));
   var wvu_nav_data = JSON.parse(fs.readFileSync('./data/_wvu-nav.json'));
@@ -86,7 +91,7 @@ gulp.task('ci',['build']);
 
 gulp.task('default',['build','browser-sync'], function(){
   gulp.watch(['./src/scss/*.scss','./test/scss/*.scss'],['compile-scss']);
-  gulp.watch(['./src/handlebars/*.hbs','./test/**/*.hbs','./test/data.json'],['build']);
+  gulp.watch(['./src/handlebars/*.hbs','./test/**/*.hbs','./data/*.json','./test/data/*.json'],['build']);
   gulp.watch('./build/**/*.html').on('change',reload);
   gulp.watch('./build/css/*.css').on('change',reload);
   gulp.watch(['./src/scss/*.scss','./src/haml/**/*.haml','./src/cleanslate/**/*.html'], ['todo']);
